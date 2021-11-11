@@ -1,0 +1,14 @@
+body{
+    padding: 30px;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box{
+    padding: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

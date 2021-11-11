@@ -1,0 +1,21 @@
+body{
+    padding: 30px;
+    background-color: purple;
+    color: white;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box{
+    padding: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: white;
+    border: none;
+    border-radius: 0.5em;
+    background-color: white;
+    color: white;
+}
