@@ -15,18 +15,25 @@
           <h2>Staff Complaint Form</h2>
           <div class="horizontal-2"></div>
           <form action="" method="post" class="complaint-form">
-            <label for="name" class="field-label">Name</label>
-            <input type="text" name="name" class="form-field"/>
-            <label for="directorate" class="field-label">Directorate</label>
-            <input type="text" name="directorate" class="form-field" />
+            {% csrf_token %}
+            <label for="id_name" class="field-label">Name</label>
+            <input type="text" name="name" class="form-field" required id="id_name"/>
+            
+            <label for="id_directorate" class="field-label">Directorate</label>
+            <input type="text" name="directorate" class="form-field" required id="id_directorate"/>
+
             <label for="location" class="field-label">Location</label>
-            <input type="text" name="location" class="form-field" />
+            <input type="text" name="location" class="form-field" required id="id_location"/>
+            
             <label for="device" class="field-label">Device</label>
-            <input type="text" name="device" class="form-field" />
+            <input type="text" name="device" class="form-field" required id="id_device"/>
+
             <label for="problem" class="field-label">Problem</label>
-            <input type="text" name="problem" class="form-field" />
+            <input type="text" name="problem" class="form-field" required id="id_problem"/>
+
             <label for="short_description" class="field-label">Short description</label>
-            <textarea type="text" name="short_description" rows=15" class="form-field"></textarea>
+            <textarea type="text" name="short_description" rows=15" class="form-field" required id="id_short_description"></textarea>
+
             <input type="submit" value="Submit" class="submit"/>
           </form>
       </section>

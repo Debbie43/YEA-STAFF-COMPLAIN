@@ -78,3 +78,13 @@ body{
     font-size: 5rem;
     margin-bottom: 1rem;
 }
+
+.new-complaint{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid greenyellow;
+}
+
+.new-complaint:hover{
+    border-bottom: 5px solid greenyellow;
+}
