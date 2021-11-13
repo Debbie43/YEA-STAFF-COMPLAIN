@@ -5,5 +5,5 @@ from complaint_app.models import Complaint
 
 @admin.register(Complaint)
 class ComplaintAdmin(admin.ModelAdmin):
-    list_display = ('name',)
-    list_filter = ('resolved', )
+    list_display = ('name','resolved','problem',)
+    list_filter = ('resolved',)
